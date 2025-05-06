@@ -1,0 +1,25 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+}
+.shadow-yellow {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.8);
+}
+.shadow-green {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.8);
+}
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
